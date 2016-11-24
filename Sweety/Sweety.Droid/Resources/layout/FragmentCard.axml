@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <admaiora.appkit.ui.ItemRecyclerView
+        android:id="@+id/MarkerList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:choiceMode="singleChoice"
+        android:divider="#00000000"
+        android:dividerHeight="0dp"
+        android:layout_margin="8dp"
+        android:background="#C8DDD8" />
+</RelativeLayout>
