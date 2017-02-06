@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/SearchLayout"
+        android:background="#313131">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/SearchText"
+            android:background="#FFF"
+            android:textSize="20dp"
+            android:fontFamily="sans-serif-light"
+            android:hint="Ricerca per nome utente"
+            android:textColor="#313131"
+            android:textColorHint="#a1a1a1"
+            android:padding="4dp"
+            android:layout_toLeftOf="@+id/CancelButton"
+            android:layout_margin="4dp"
+            android:layout_centerVertical="true" />
+        <ImageButton
+            android:src="@drawable/button_cancel"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:id="@+id/CancelButton"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:padding="8dp" />
+    </RelativeLayout>
+    <admaiora.appkit.ui.ItemRecyclerView
+        android:id="@+id/UserList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:choiceMode="singleChoice"
+        android:divider="#515151"
+        android:dividerHeight="1dp"
+        android:background="#C8DDD8"
+        android:layout_below="@+id/SearchLayout" />
+</RelativeLayout>

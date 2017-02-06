@@ -3,14 +3,13 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content">
     <ImageView
-        android:src="@drawable/button_marker_green"
+        android:src="@drawable/button_marker_empty"
         android:layout_width="72dp"
         android:layout_height="72dp"
         android:id="@+id/MarkerImage"
         android:adjustViewBounds="true"
         android:scaleType="fitCenter" />
     <TextView
-        android:text="1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/ValueLabel"

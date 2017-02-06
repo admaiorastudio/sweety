@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DD000000"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:clipChildren="false"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    android:focusable="true">
+    <TextView
+        android:text="0,00 pts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TotalValueLabel"
+        android:fontFamily="sans-serif-light"
+        android:textSize="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:textColor="#FFF" />
+    <TextView
+        android:text="(max consumable 0.00 pts)"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/MaxValueLabel"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#FFA399"
+        android:textSize="20dp"
+        android:layout_below="@+id/TotalValueLabel"
+        android:layout_centerHorizontal="true" />
+    <RelativeLayout
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/PanelLayout"
+        android:layout_centerInParent="true"
+        android:clipChildren="false">
+        <Button
+            android:background="@drawable/button_pt_1"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:id="@+id/Value1Button"
+            android:layout_centerHorizontal="true"
+            android:textSize="60dp"
+            android:textColor="#313131"
+            android:text="1"
+            android:fontFamily="sans-serif-light" />
+        <Button
+            android:background="@drawable/button_pt_2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/Value01Button"
+            android:layout_below="@+id/Value1Button"
+            android:layout_marginTop="-25dp"
+            android:layout_marginLeft="-5dp"
+            android:fontFamily="sans-serif-light"
+            android:text="1"
+            android:textColor="#313131"
+            android:textSize="30dp" />
+        <Button
+            android:background="@drawable/button_pt_2"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:id="@+id/Value05Button"
+            android:layout_below="@+id/Value1Button"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-light"
+            android:text="5"
+            android:textColor="#313131"
+            android:textSize="30dp" />
+        <Button
+            android:background="@drawable/button_pt_3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/Value10Button"
+            android:layout_below="@+id/Value1Button"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="100dp"
+            android:fontFamily="sans-serif-light"
+            android:text="10"
+            android:textColor="#313131"
+            android:textSize="30dp" />
+        <Button
+            android:background="@drawable/button_pt_3"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/Value20Button"
+            android:layout_below="@+id/Value1Button"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="-10dp"
+            android:layout_marginRight="25dp"
+            android:fontFamily="sans-serif-light"
+            android:textSize="34dp"
+            android:text="20"
+            android:textColor="#313131" />
+        <Button
+            android:background="@drawable/button_pt_3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/Value50Button"
+            android:layout_below="@+id/Value1Button"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="-80dp"
+            android:layout_marginRight="-30dp"
+            android:textColor="#313131"
+            android:text="50"
+            android:textSize="40dp"
+            android:fontFamily="sans-serif-light" />
+    </RelativeLayout>
+    <ImageButton
+        android:src="@drawable/button_ok"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/OkButton"
+        android:background="@null"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp" />
+</RelativeLayout>

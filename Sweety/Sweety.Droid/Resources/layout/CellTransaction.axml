@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="#FFF">
+    <View
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:id="@+id/MarkerColorView"
+        android:background="#63C2EB"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/UserDetails"
+        android:layout_toRightOf="@+id/MarkerColorView"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        android:layout_toLeftOf="@+id/ArrowImage">
+        <TextView
+            android:text="Total spent: 0.00 pts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/TransactionValueLabel"
+            android:fontFamily="sans-serif-thin"
+            android:textColor="#313131"
+            android:textSize="24dp"
+            android:lines="1"
+            android:maxLines="1"
+            android:singleLine="true" />
+        <TextView
+            android:text="consumption made @ 01/01/2016 00:00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/TransactionDetailsLabel"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#313131"
+            android:layout_below="@+id/TransactionValueLabel"
+            android:singleLine="true"
+            android:lines="1"
+            android:maxLines="1"
+            android:layout_marginLeft="2dp" />
+    </RelativeLayout>
+</RelativeLayout>

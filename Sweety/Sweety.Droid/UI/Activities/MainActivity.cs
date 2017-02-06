@@ -74,11 +74,14 @@ namespace AdMaiora.Sweety
             this.LoadLayout.Clickable = true;
             this.LoadLayout.Visibility = ViewStates.Gone;
 
-            var f = new CardFragment();
-
-            this.SupportFragmentManager.BeginTransaction()
-                .Add(Resource.Id.ContentLayout, f, "CardFragment")
-                .Commit();
+            bool isResuming = this.SupportFragmentManager.FindFragmentById(Resource.Id.ContentLayout) != null;
+            if (!isResuming)
+            {
+                var f = new CustomersFragment();
+                this.SupportFragmentManager.BeginTransaction()
+                    .Add(Resource.Id.ContentLayout, f, "UserFragment")
+                    .Commit();
+            }
         }
 
         protected override void OnDestroy()

@@ -1,0 +1,18 @@
+{
+  "engines": {
+    "node": "4.4",
+    "npm": "3.8.6"
+  },
+  "name": "azure-mobile-apps-quickstarts.backend.node.try-mobile-apps",
+  "version": "0.0.1",
+  "description": "Sweety app for mobile",
+  "author": "Ad Maiora Studio",
+  "repository": "admaiorastudio/sweety",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.13.0",
+    "sqlite3": "^3.1.3",
+    "swagger-ui": "^2.2.8"
+  },
+  "devDependencies": {}
+}

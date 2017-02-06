@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFF">
+    <ImageView
+        android:src="@drawable/user_image"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:id="@+id/UserImage"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp" />
+    <RelativeLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/UserDetails"
+        android:layout_toRightOf="@+id/UserImage"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="8dp"
+        android:layout_toLeftOf="@+id/ArrowImage">
+        <TextView
+            android:text="User Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/UserNameLabel"
+            android:fontFamily="sans-serif-thin"
+            android:textColor="#313131"
+            android:textSize="24dp"
+            android:lines="1"
+            android:maxLines="1"
+            android:singleLine="true" />
+        <TextView
+            android:text="card value: 0.00 pts current credit: 0.00 pts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/UserDetailsLabel"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#313131"
+            android:layout_below="@+id/UserNameLabel"
+            android:singleLine="true"
+            android:lines="1"
+            android:maxLines="1" />
+    </RelativeLayout>
+    <ImageView
+        android:src="@drawable/image_arrow_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ArrowImage"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="4dp" />
+</RelativeLayout>
